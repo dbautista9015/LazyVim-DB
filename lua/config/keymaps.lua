@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 
 local map = vim.keymap.set
+local unmap = vim.keymap.del
 
 -- Remap for grabbing 1 or more lines and move them as a unit
 map("v", "J", ":m '>+1<CR>gv=gv")
@@ -18,3 +19,9 @@ map("n", "N", "Nzzzv")
 
 -- Remap for when yanking a word to have that word available for paste
 map("x", "<leader>p", '"_dP')
+
+-- Delete Default Lazyvim Keymaps
+unmap("n", "<C-h>")
+unmap("n", "<C-j>")
+unmap("n", "<C-k>")
+unmap("n", "<C-l>")
