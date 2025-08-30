@@ -6,8 +6,8 @@ return {
     style = "night",
     transparent = true,
     styles = {
-      sidebars = "dark",
-      floats = "dark",
+      sidebars = "transparent",
+      floats = "transparent",
     },
   },
 }
